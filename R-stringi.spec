@@ -4,12 +4,12 @@
 #
 Name     : R-stringi
 Version  : 1.0
-Release  : 15
+Release  : 16
 URL      : http://cran.r-project.org/src/contrib/stringi_1.0-1.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/stringi_1.0-1.tar.gz
 Summary  : Character String Processing Facilities
 Group    : Development/Tools
-License  : MIT
+License  : BSD-3-Clause MIT
 Requires: R-stringi-lib
 BuildRequires : clr-R-helpers
 BuildRequires : pkgconfig(icu-uc)
@@ -33,8 +33,10 @@ lib components for the R-stringi package.
 %install
 rm -rf %{buildroot}
 export LANG=C
-export CFLAGS="$CFLAGS -O3 -flto -ffunction-sections -fno-semantic-interposition "
-export CXXFLAGS="$CXXFLAGS -O3 -flto -ffunction-sections -fno-semantic-interposition "
+export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export LDFLAGS="$LDFLAGS  -Wl,-z -Wl,relro"
@@ -42,6 +44,7 @@ mkdir -p %{buildroot}/usr/lib64/R/library
 R CMD INSTALL --install-tests --build  -l %{buildroot}/usr/lib64/R/library stringi
 %{__rm} -rf %{buildroot}%{_datadir}/R/library/R.css
 %check
+export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost
