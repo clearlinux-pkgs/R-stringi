@@ -4,7 +4,7 @@
 #
 Name     : R-stringi
 Version  : 1.1.2
-Release  : 21
+Release  : 22
 URL      : http://cran.r-project.org/src/contrib/stringi_1.1.2.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/stringi_1.1.2.tar.gz
 Summary  : Character String Processing Facilities
@@ -30,9 +30,11 @@ lib components for the R-stringi package.
 
 %build
 export LANG=C
+export SOURCE_DATE_EPOCH=1484549702
 
 %install
 rm -rf %{buildroot}
+export SOURCE_DATE_EPOCH=1484549702
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -42,7 +44,7 @@ export AR=gcc-ar
 export RANLIB=gcc-ranlib
 export LDFLAGS="$LDFLAGS  -Wl,-z -Wl,relro"
 mkdir -p %{buildroot}/usr/lib64/R/library
-R CMD INSTALL --install-tests --build  -l %{buildroot}/usr/lib64/R/library stringi
+R CMD INSTALL --install-tests --built-timestamp=${SOURCE_DATE_EPOCH} --build  -l %{buildroot}/usr/lib64/R/library stringi
 %{__rm} -rf %{buildroot}%{_datadir}/R/library/R.css
 %check
 export LANG=C
