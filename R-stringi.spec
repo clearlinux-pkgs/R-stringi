@@ -4,7 +4,7 @@
 #
 Name     : R-stringi
 Version  : 1.1.5
-Release  : 26
+Release  : 27
 URL      : http://cran.r-project.org/src/contrib/stringi_1.1.5.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/stringi_1.1.5.tar.gz
 Summary  : Character String Processing Facilities
@@ -29,12 +29,15 @@ lib components for the R-stringi package.
 %setup -q -c -n stringi
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1491609665
+export SOURCE_DATE_EPOCH=1492799872
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1491609665
+export SOURCE_DATE_EPOCH=1492799872
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -50,7 +53,7 @@ R CMD INSTALL --install-tests --built-timestamp=${SOURCE_DATE_EPOCH} --build  -l
 export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
 R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library stringi
 
@@ -63,6 +66,7 @@ R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/lib
 /usr/lib64/R/library/stringi/INDEX
 /usr/lib64/R/library/stringi/LICENSE
 /usr/lib64/R/library/stringi/Meta/Rd.rds
+/usr/lib64/R/library/stringi/Meta/features.rds
 /usr/lib64/R/library/stringi/Meta/hsearch.rds
 /usr/lib64/R/library/stringi/Meta/links.rds
 /usr/lib64/R/library/stringi/Meta/nsInfo.rds
