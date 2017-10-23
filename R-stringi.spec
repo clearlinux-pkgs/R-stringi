@@ -4,7 +4,7 @@
 #
 Name     : R-stringi
 Version  : 1.1.5
-Release  : 33
+Release  : 34
 URL      : http://cran.r-project.org/src/contrib/stringi_1.1.5.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/stringi_1.1.5.tar.gz
 Summary  : Character String Processing Facilities
