@@ -1,5 +1,6 @@
 # This file contains recursive sources that require this package
 R-AER
+R-ClustVarLV
 R-Cubist
 R-DBI
 R-DBItest
@@ -14,7 +15,6 @@ R-GlobalOptions
 R-Hmisc
 R-ICS
 R-ICSNP
-R-IRdisplay
 R-IRkernel
 R-Lahman
 R-ModelMetrics
@@ -187,7 +187,6 @@ R-shinythemes
 R-smoother
 R-sna
 R-spdep
-R-stringr
 R-strucchange
 R-survey
 R-systemfit
@@ -206,6 +205,5 @@ R-vcd
 R-vegan
 R-viridis
 R-visNetwork
-R-withr
 R-xml2
 apache-spark
