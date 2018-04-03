@@ -131,6 +131,7 @@ R-multiwayvcov
 R-mvoutlier
 R-nycflights13
 R-openssl
+R-openxlsx
 R-optparse
 R-party
 R-partykit
@@ -160,6 +161,7 @@ R-reshape
 R-reshape2
 R-reticulate
 R-rgl
+R-rio
 R-rmarkdown
 R-rms
 R-rngtools
