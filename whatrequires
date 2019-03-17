@@ -1,19 +1,14 @@
 # This file contains recursive sources that require this package
-R-BatchJobs
-R-Cubist
 R-IRkernel
-R-MALDIquant
 R-Rvmmin
 R-WikipediR
 R-bbmle
-R-bibtex
-R-bio3d
-R-corrplot
 R-ecodist
 R-fauxpas
 R-fitbitScraper
 R-flexsurv
 R-gridExtra
+R-later
 R-manipulateWidget
 R-memisc
 R-phylogram
