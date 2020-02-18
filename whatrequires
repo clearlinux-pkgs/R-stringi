@@ -3,16 +3,12 @@ R-BatchJobs
 R-BayesFactor
 R-Ecfun
 R-RNeXML
-R-SGP
 R-binGroup
-R-blockmodeling
 R-gbutils
-R-magick
 R-openxlsx
 R-pkgmaker
 R-readODS
 R-reshape2
-R-rngtools
 R-roxygen2
 R-snakecase
 R-stringr
