@@ -1,17 +1,15 @@
 # This file contains recursive sources that require this package
 R-BatchJobs
-R-BayesFactor
 R-Ecfun
 R-RNeXML
 R-binGroup
 R-gbutils
+R-janitor
+R-languageserver
 R-openxlsx
 R-pkgmaker
 R-readODS
-R-reshape2
 R-roxygen2
 R-snakecase
 R-stringr
 R-tidyr
-R-tikzDevice
-R-xml2
