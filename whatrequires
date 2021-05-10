@@ -5,9 +5,7 @@ R-RNeXML
 R-janitor
 R-languageserver
 R-openxlsx
-R-pkgmaker
 R-readODS
 R-roxygen2
 R-snakecase
 R-stringr
-R-tidyr
