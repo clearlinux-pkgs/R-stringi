@@ -2,8 +2,10 @@
 R-BatchJobs
 R-Ecfun
 R-RNeXML
+R-batchtools
 R-janitor
 R-languageserver
+R-mlr
 R-openxlsx
 R-readODS
 R-roxygen2
