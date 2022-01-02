@@ -4,7 +4,7 @@
 #
 Name     : R-stringi
 Version  : 1.7.6
-Release  : 96
+Release  : 97
 URL      : https://cran.r-project.org/src/contrib/stringi_1.7.6.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/stringi_1.7.6.tar.gz
 Summary  : Character String Processing Facilities
@@ -40,10 +40,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1638373263
+export SOURCE_DATE_EPOCH=1641132729
 
 %install
-export SOURCE_DATE_EPOCH=1638373263
+export SOURCE_DATE_EPOCH=1641132729
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -113,3 +113,5 @@ R CMD check --no-manual --no-examples --no-codoc stringi || :
 %files lib
 %defattr(-,root,root,-)
 /usr/lib64/R/library/stringi/libs/stringi.so
+/usr/lib64/R/library/stringi/libs/stringi.so.avx2
+/usr/lib64/R/library/stringi/libs/stringi.so.avx512
