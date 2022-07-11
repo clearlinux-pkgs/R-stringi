@@ -3,6 +3,7 @@ R-BatchJobs
 R-Ecfun
 R-RNeXML
 R-batchtools
+R-data.tree
 R-janitor
 R-languageserver
 R-mlr
