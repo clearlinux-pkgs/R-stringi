@@ -4,7 +4,7 @@
 #
 Name     : R-stringi
 Version  : 1.7.12
-Release  : 105
+Release  : 106
 URL      : https://cran.r-project.org/src/contrib/stringi_1.7.12.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/stringi_1.7.12.tar.gz
 Summary  : Fast and Portable Character String Processing Facilities
