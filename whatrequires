@@ -3,12 +3,14 @@ R-BatchJobs
 R-Ecfun
 R-RNeXML
 R-batchtools
+R-bold
 R-data.tree
 R-janitor
 R-languageserver
 R-mlr
 R-openxlsx
 R-readODS
+R-rio
 R-roxygen2
 R-snakecase
 R-stringr

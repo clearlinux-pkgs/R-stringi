@@ -1,8 +1,7 @@
 libR.so
 libc.so.6
 libgcc_s.so.1
-libicudata.so.70
-libicui18n.so.70
-libicuuc.so.70
+libicui18n.so.73
+libicuuc.so.73
 libm.so.6
 libstdc++.so.6
