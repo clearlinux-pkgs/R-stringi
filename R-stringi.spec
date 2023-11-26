@@ -6,10 +6,10 @@
 # autospec commit: e661f3a
 #
 Name     : R-stringi
-Version  : 1.8.1
-Release  : 112
-URL      : https://cran.r-project.org/src/contrib/stringi_1.8.1.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/stringi_1.8.1.tar.gz
+Version  : 1.8.2
+Release  : 113
+URL      : https://cran.r-project.org/src/contrib/stringi_1.8.2.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/stringi_1.8.2.tar.gz
 Summary  : Fast and Portable Character String Processing Facilities
 Group    : Development/Tools
 License  : BSD-3-Clause
@@ -55,10 +55,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1699982444
+export SOURCE_DATE_EPOCH=1700989666
 
 %install
-export SOURCE_DATE_EPOCH=1699982444
+export SOURCE_DATE_EPOCH=1700989666
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/R-stringi
 cp %{_builddir}/stringi/LICENSE %{buildroot}/usr/share/package-licenses/R-stringi/195db57676b69ebe13c0ac3e32b88a7c83a67461 || :
