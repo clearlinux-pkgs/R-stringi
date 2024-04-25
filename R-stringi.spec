@@ -7,7 +7,7 @@
 #
 Name     : R-stringi
 Version  : 1.8.3
-Release  : 114
+Release  : 115
 URL      : https://cran.r-project.org/src/contrib/stringi_1.8.3.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/stringi_1.8.3.tar.gz
 Summary  : Fast and Portable Character String Processing Facilities
