@@ -10,7 +10,8 @@ R-languageserver
 R-mlr
 R-openxlsx
 R-readODS
-R-rio
 R-roxygen2
 R-snakecase
 R-stringr
+R-taxize
+R-textshaping
